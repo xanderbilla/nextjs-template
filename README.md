@@ -1,5 +1,3 @@
-Absolutely! Here's a **professionally rewritten version** of your `README.md` that enhances clarity, structure, and tone, and aligns with industry standards for commercial open-source templates:
-
 # **Next.js Template**
 
 A clean, modern, and production-ready **Next.js 14** template featuring a polished landing page, **Tailwind CSS** styling, **Docker** support, and dark mode compatibility.
