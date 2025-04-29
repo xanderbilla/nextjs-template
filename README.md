@@ -41,19 +41,48 @@ A clean, modern, and production-ready **Next.js 14** template featuring a polish
 
 ### 🐳 Docker Setup
 
-1. **Build the Docker image:**
+1. **Pull from Docker Hub:**
 
-   ```bash
-   docker build -t nextjs-template .
-   ```
+```bash
+# Replace USERNAME with your Docker Hub username
+docker pull USERNAME/nextjs-template:latest
+```
 
-2. **Run the container:**
+2. **Or build locally:**
 
-   ```bash
-   docker run -p 3000:3000 nextjs-template
-   ```
+```bash
+docker build -t nextjs-template .
+```
 
-   Your app will be live at [http://localhost:3000](http://localhost:3000)
+3. **Run the container:**
+
+```bash
+docker run -p 3000:3000 nextjs-template
+```
+
+Your app will be live at [http://localhost:3000](http://localhost:3000)
+
+### 🔄 CI/CD Pipeline
+
+This template includes a GitHub Actions workflow that automatically:
+
+- Builds the Docker image
+- Pushes it to Docker Hub
+- Tags versions appropriately
+- Caches build layers for faster builds
+
+To use the CI/CD pipeline:
+
+1. Fork this repository
+2. Add these secrets to your GitHub repository:
+   - `DOCKERHUB_USERNAME`: Your Docker Hub username
+   - `DOCKERHUB_TOKEN`: Your Docker Hub access token
+
+The workflow will trigger on:
+
+- Push to main branch
+- Pull requests to main branch
+- Manual trigger from Actions tab
 
 ## 📁 Project Structure
 
@@ -99,4 +128,3 @@ For commercial inquiries or licensing discussions:
 
 - Open an issue: [GitHub Issues](https://github.com/xanderbilla/nextjs-template/issues)
 - Or contact the maintainer via GitHub profile
-
