@@ -6,8 +6,6 @@ on:
     # Trigger on version tags
     tags:
       - "v*.*.*"
-  pull_request:
-    branches: ["main"]
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
 
