@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Absolutely! Here's a **professionally rewritten version** of your `README.md` that enhances clarity, structure, and tone, and aligns with industry standards for commercial open-source templates:
 
-## Getting Started
+# **Next.js Template**
 
-First, run the development server:
+A clean, modern, and production-ready **Next.js 14** template featuring a polished landing page, **Tailwind CSS** styling, **Docker** support, and dark mode compatibility.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- ⚡ Built with **Next.js 14 (App Router)**
+- 🎨 Styled using **Tailwind CSS**
+- 🐳 **Docker-ready** for containerized deployment
+- 🌙 **Dark mode** out of the box
+- 📱 Fully **responsive** across devices
+- 🎬 Smooth **animations** and transitions
+- 🔤 Uses [Geist](https://vercel.com/font) font by Vercel
+
+## 🛠️ Getting Started
+
+### 🔧 Local Development
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/xanderbilla/nextjs-template.git
+   cd nextjs-template
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+### 🐳 Docker Setup
+
+1. **Build the Docker image:**
+
+   ```bash
+   docker build -t nextjs-template .
+   ```
+
+2. **Run the container:**
+
+   ```bash
+   docker run -p 3000:3000 nextjs-template
+   ```
+
+   Your app will be live at [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+nextjs-template/
+├── app/               # App router logic
+├── components/        # Reusable UI components
+├── public/            # Static assets
+├── styles/            # Global CSS
+├── Dockerfile         # Docker configuration
+└── package.json       # Project dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧑‍💻 Development Notes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Modify the main landing page in `app/page.tsx`
+- Hot reload enabled—changes reflect instantly in development
+- Built for rapid deployment and customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Resources
 
-## Learn More
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Docs](https://tailwindcss.com/docs)
+- [Docker Documentation](https://docs.docker.com)
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pull Requests are welcome! If you have suggestions or improvements, feel free to fork the repo and submit a PR.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License & Usage
 
-## Deploy on Vercel
+This project is protected under a **Formal Commercial Use License (FCUL)**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🔒 Personal and commercial use **requires a signed agreement** with the author.
+- 📝 Full licensing terms can be found in the [LICENSE](./TEMPLATE_LICENSE.md) file.
+- ❗ Unauthorized use, duplication, or resale is strictly prohibited.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For licensing or business inquiries, please open an [issue](https://github.com/xanderbilla/nextjs-template/issues) or contact the author directly.
+
+## 📬 Contact
+
+For commercial inquiries or licensing discussions:
+
+- Open an issue: [GitHub Issues](https://github.com/xanderbilla/nextjs-template/issues)
+- Or contact the maintainer via GitHub profile
+
