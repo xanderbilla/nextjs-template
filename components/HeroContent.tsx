@@ -18,20 +18,18 @@ export default function HeroContent() {
         />
       </div>
 
-      <h1 className="text-6xl md:text-8xl font-bold">
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#00FF94] to-[#00FFFF] animate-shimmer">
-          Welcome to Next.js
-        </span>
+      <h1 className="text-6xl md:text-8xl font-bold text-slate-200">
+        Welcome to Next.js
       </h1>
 
-      <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto font-light">
+      <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto font-light">
         Build modern web applications with the power of React and Next.js
       </p>
 
       <div className="flex gap-6 justify-center mt-12">
         <Link
           href="https://nextjs.org/docs"
-          className="group px-8 py-3 rounded-full bg-gradient-to-r from-[#00FF94] to-[#00FFFF] text-[#0A1120] font-medium hover:shadow-[0_0_30px_-5px_#00FF94] transition-all duration-300 flex items-center gap-2"
+          className="group px-8 py-3 rounded-full bg-slate-200 text-slate-950 font-medium hover:bg-slate-100 transition-all duration-300 flex items-center gap-2"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -47,7 +45,7 @@ export default function HeroContent() {
         </Link>
         <Link
           href="https://github.com/xanderbilla/nextjs-template"
-          className="group px-8 py-3 rounded-full border border-[#00FF94] text-[#00FF94] font-medium hover:bg-[#00FF94] hover:text-[#0A1120] transition-all duration-300 flex items-center gap-2"
+          className="group px-8 py-3 rounded-full border border-slate-200 text-slate-200 font-medium hover:bg-slate-200 hover:text-slate-950 transition-all duration-300 flex items-center gap-2"
           target="_blank"
           rel="noopener noreferrer"
         >
