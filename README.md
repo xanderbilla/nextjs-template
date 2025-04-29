@@ -67,8 +67,8 @@ Your app will be live at [http://localhost:3000](http://localhost:3000)
 This template includes a GitHub Actions workflow that automatically:
 
 - Builds the Docker image
-- Pushes it to Docker Hub
-- Tags versions appropriately
+- Pushes it to Docker Hub with version tags
+- Maintains both version and latest tags
 - Caches build layers for faster builds
 
 To use the CI/CD pipeline:
@@ -80,9 +80,36 @@ To use the CI/CD pipeline:
 
 The workflow will trigger on:
 
-- Push to main branch
+- Push to main branch (creates/updates `latest` tag)
+- Creating a version tag like `v1.0.0` (creates version-specific tag)
 - Pull requests to main branch
 - Manual trigger from Actions tab
+
+#### Version Management
+
+To create a new version:
+
+```bash
+# Create and push a new version tag
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+This will trigger the workflow to:
+
+- Build the image
+- Tag it as both `USERNAME/nextjs-template:1.0.0` and `USERNAME/nextjs-template:latest`
+- Push both tags to Docker Hub
+
+To pull a specific version:
+
+```bash
+# Pull latest
+docker pull USERNAME/nextjs-template:latest
+
+# Pull specific version
+docker pull USERNAME/nextjs-template:1.0.0
+```
 
 ## 📁 Project Structure
 
